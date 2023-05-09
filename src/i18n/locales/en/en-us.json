@@ -1,0 +1,51 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "home",
+      "about": "about",
+      "projects": "projects",
+      "contact": "contact"
+    },
+    "hisection": {
+      "title": "Hi, I'm Luiz",
+      "description": "I'm a full-stack developer who's passionate about technology and constantly striving to learn new skills to create innovative and efficient solutions for my clients.",
+      "button": "projects"
+    },
+    "asidelinks": {
+      "resume": "Resume"
+    },
+    "about": {
+      "AboutMe": "about me",
+      "SkillsTitle": "My Skills",
+      "AboutMeResume": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.",
+      "AboutMeDescriptionTitle": "Get to know me!",
+      "AboutMeDescription1": "I'm a Full-stack Developer focused on developing Websites and Web Applications that help clients succeed in their ventures. Check out some of the applications in the Projects section!",
+      "AboutMeDescription2": "I also share my professional life with the community, so feel free to follow me on LinkedIn, where I post updates about my studies and professional career. I'm also available to answer any questions through the contact channels.",
+      "AboutMeDescription3": "I'm open to job opportunities where I can contribute and learn. If you have a good opportunity that matches my skills and experiences, then don't hesitate to contact me."
+    },
+    "projects": {
+      "Projects": "Projects",
+      "ProjectsResume": "Here you'll find some of my projects that I developed to put into practice the technologies I've learned.",
+      "instagram": {
+        "description": "A full-stack project where I clone some Instagram features, such as: login, new account registration, stories, notifications, posts, likes, and comments, as well as the possibility of user editing and changing profile pictures."
+      },
+      "netflix": {
+        "description": "A front-end project made using a public API. Developed primarily with React.js and Styled-Components principles, focusing on functions that enable greater user interactivity."
+      },
+      "chat": {
+        "description": "A full-stack project where I use socket.io to provide a real-time connection with the server, enabling the functionality of instant messaging."
+      },
+      "quiz": {
+        "description": "A full-stack project where I consume an API on the back-end to generate questions, as well as store player data, making it possible to obtain the player's percentage of correct answers."
+      }
+    },
+    "contact": {
+      "contact": "contact",
+      "description": "I'm available for contact through social media and communication channels. You can reach out to me to chat or ask any questions. Feel free to follow me on my social media channels."
+    },
+    "footer": {
+      "description": "A full-stack web developer",
+      "socials": "social"
+    }
+  }
+}

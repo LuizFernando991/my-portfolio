@@ -1,0 +1,51 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "início",
+      "about": "sobre",
+      "projects": "projetos",
+      "contact": "contato"
+    },
+    "hisection": {
+      "title": "Olá, meu nome é Luiz",
+      "description": "Sou um desenvolvedor full-stack apaixonado por tecnologia e em constante busca por aprender novas habilidades para criar soluções inovadoras e eficientes para os meus clientes.",
+      "button": "projetos"
+    },
+    "asidelinks": {
+      "resume": "Currículo"
+    },
+    "about": {
+      "AboutMe": "sobre mim",
+      "SkillsTitle": "Minhas Habilidades",
+      "AboutMeResume": "Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais, principalmente em termos de programação e tecnologia.",
+      "AboutMeDescriptionTitle": "Quem sou eu",
+      "AboutMeDescription1": "Eu sou um desenvolvedor Full-stack focado no desenvolvimento de Websites e Aplicações Web, que ajudam os clientes em seu sucesso com seus empreendimentos. Confira algumas aplicações na seção de Projetos!",
+      "AboutMeDescription2": "Eu também compartilho minha vida profissional com a comunidade, então sinta-se livre para me seguir no Linkedin, onde posto algumas atualizações sobre meus estudos e carreira profissional. Também posso retirar qualquer dúvida por meios dos canais de contato.",
+      "AboutMeDescription3": "Estou disponível para oportunidade de trabalho onde eu possa contribuir e aprender. Se você tem uma boa oportunidade que combina com as minhas habilidades e experiências, então não exite em me contatar."
+    },
+    "projects": {
+      "Projects": "Projetos",
+      "ProjectsResume": "Aqui você vai encontrar alguns dos meus projetos que desenvolvi para colocar em prática as tecnologias que aprendi.",
+      "instagram": {
+        "description": "Um projeto full-stack onde clono algumas funções do Instagram, sendo elas: login, registro de novas contas, stories, notificações, posts, likes e comentários, além da possíbilidade de edição de usuários e troca de imagens de perfil."
+      },
+      "netflix": {
+        "description": "Um projeto front-end feito a partir de uma API pública. Feito principalmente com os princípios do React.js e Styled-Components focando nas funções que permitem maior interatividade com o usuário."
+      },
+      "chat": {
+        "description": "Um projeto full-stack onde utilizo o socket.io para proporcionar uma conexão em tempo real com o servidor, assim possibilitando a funcionalidade de mensagens instantâneas."
+      },
+      "quiz": {
+        "description": "Um projeto full-stack, onde consumo uma API no back-end para gerar as perguntas, além de armazenar os dados do jogador, dessa maneira sendo possível obter a porcentagem de acerto do player."
+      }
+    },
+    "contact": {
+      "contact": "contato",
+      "description": "Estou disponível para contato através de várias redes sociais e canais de comunicação. Você pode entrar em contato comigo para conversarmos ou tirar qualquer dúvida. Sinta-se a vontade para acompanhar minhas redes."
+    },
+    "footer": {
+      "description": "Desenvolvedor web Full-Stack",
+      "socials": "Sociais"
+    }
+  }
+}
