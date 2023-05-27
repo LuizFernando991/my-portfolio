@@ -4,12 +4,15 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiSocketdotio,
-  // SiJest,
+  SiJest,
   SiPython,
   SiMongodb,
   SiMysql,
   SiReact,
-  SiExpress
+  SiExpress,
+  SiPrisma,
+  SiNestjs,
+  SiStyledcomponents
 } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import * as Styled from './styles'
@@ -46,6 +49,10 @@ export default function Skills() {
         <Styled.Label>Node.js</Styled.Label>
       </Styled.Li>
       <Styled.Li>
+        <SiNestjs />
+        <Styled.Label>Nest.js</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
         <SiExpress />
         <Styled.Label>Express</Styled.Label>
       </Styled.Li>
@@ -53,12 +60,10 @@ export default function Skills() {
         <SiSocketdotio />
         <Styled.Label>Socket.io</Styled.Label>
       </Styled.Li>
-      {/* <Styled.Li>
+      <Styled.Li>
         <SiJest />
-        <Styled.Label>
-          JEST
-        </Styled.Label>
-      </Styled.Li> */}
+        <Styled.Label>JEST</Styled.Label>
+      </Styled.Li>
       <Styled.Li>
         <SiPython />
         <Styled.Label>Python</Styled.Label>
@@ -70,6 +75,14 @@ export default function Skills() {
       <Styled.Li>
         <SiMysql />
         <Styled.Label>MySQL</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiPrisma />
+        <Styled.Label>Prisma</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiStyledcomponents />
+        <Styled.Label>Styled Components</Styled.Label>
       </Styled.Li>
     </Styled.Container>
   )
