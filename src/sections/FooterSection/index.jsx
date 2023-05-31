@@ -15,6 +15,9 @@ export default function FooterSection() {
           <Styled.AboutMeDescription>
             {i18next.t('footer.description')}
           </Styled.AboutMeDescription>
+          <Styled.AboutMeDescription>
+            Designed by @rammcodes
+          </Styled.AboutMeDescription>
         </Styled.AboutMe>
         <Styled.Socials>
           <Styled.H2>{i18next.t('footer.socials')}</Styled.H2>
