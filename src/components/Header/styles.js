@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { animated } from 'react-spring'
 
 export const Container = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
