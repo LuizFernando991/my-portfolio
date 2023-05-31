@@ -14,10 +14,19 @@ export const Container = styled.ul`
 export const ProjectItem = styled.li`
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 6rem;
   justify-items: center;
   margin-top: 10rem;
+`
+
+export const PreviewImageContainer = styled.div`
+  width: 100%;
+`
+
+export const PreviewImage = styled.img`
+  width: 100%;
+  max-width: max-content;
 `
 
 export const ProejctItemDescriptionContainer = styled.div`

@@ -10,32 +10,16 @@ import {
   SiYoutube,
   SiGithub
 } from 'react-icons/si'
-
-import ImageCarrosel from '../ImageCarrosel'
-
-//instagram images
-import InstagramImage1 from '../../assets/instagram1.png'
-import InstagramImage2 from '../../assets/instagram2.png'
-import InstagramImage3 from '../../assets/instagram3.png'
-import InstagramImage4 from '../../assets/instagram4.png'
-
-//netflix images
-import NetflixImage1 from '../../assets/netflix1.png'
-import NetflixImage2 from '../../assets/netflix2.png'
-
-//chat images
-import ChatImage1 from '../../assets/chat1.png'
-import ChatImage2 from '../../assets/chat2.png'
-
-//quiz images
-import Quiz1 from '../../assets/quiz1.png'
-import Quiz2 from '../../assets/quiz2.png'
-import Quiz3 from '../../assets/quiz3.png'
+import ModalVideo from '../ModalVideo'
 
 import i18next from 'i18next'
 
+import instagramPNG from '../../assets/Instagrammacbook.png'
+import netflixPNG from '../../assets/netflixmacbookiphone.png'
+import chatPNG from '../../assets/chatmacbook.png'
+import quizPNG from '../../assets/quizmacbook.png'
+
 import * as Styled from './styles'
-import ModalVideo from '../ModalVideo'
 
 export default function ProjectsList() {
   const [selectedLink, setSelectedLink] = useState(null)
@@ -47,14 +31,9 @@ export default function ProjectsList() {
       )}
       <Styled.Container>
         <Styled.ProjectItem>
-          <ImageCarrosel
-            images={[
-              InstagramImage1,
-              InstagramImage2,
-              InstagramImage3,
-              InstagramImage4
-            ]}
-          />
+          <Styled.PreviewImageContainer>
+            <Styled.PreviewImage src={instagramPNG} />
+          </Styled.PreviewImageContainer>
           <Styled.ProejctItemDescriptionContainer>
             <Styled.Title>Instagram Clone</Styled.Title>
             <Styled.ProjectDescription>
@@ -87,7 +66,7 @@ export default function ProjectsList() {
           </Styled.ProejctItemDescriptionContainer>
         </Styled.ProjectItem>
         <Styled.ProjectItem>
-          <ImageCarrosel images={[NetflixImage1, NetflixImage2]} />
+          <Styled.PreviewImage src={netflixPNG} />
           <Styled.ProejctItemDescriptionContainer>
             <Styled.Title>Netflix Interface</Styled.Title>
             <Styled.ProjectDescription>
@@ -116,7 +95,7 @@ export default function ProjectsList() {
           </Styled.ProejctItemDescriptionContainer>
         </Styled.ProjectItem>
         <Styled.ProjectItem>
-          <ImageCarrosel images={[ChatImage2, ChatImage1]} />
+          <Styled.PreviewImage src={chatPNG} />
           <Styled.ProejctItemDescriptionContainer>
             <Styled.Title>Realtime chat</Styled.Title>
             <Styled.ProjectDescription>
@@ -150,7 +129,7 @@ export default function ProjectsList() {
           </Styled.ProejctItemDescriptionContainer>
         </Styled.ProjectItem>
         <Styled.ProjectItem>
-          <ImageCarrosel images={[Quiz1, Quiz2, Quiz3]} />
+          <Styled.PreviewImage src={quizPNG} />
           <Styled.ProejctItemDescriptionContainer>
             <Styled.Title>QuizMe</Styled.Title>
             <Styled.ProjectDescription>
