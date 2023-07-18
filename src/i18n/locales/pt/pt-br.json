@@ -37,6 +37,9 @@
       },
       "quiz": {
         "description": "Um projeto full-stack, onde consumo uma API no back-end para gerar as perguntas, além de armazenar os dados do jogador, dessa maneira sendo possível obter a porcentagem de acerto do player."
+      },
+      "airbnb": {
+        "description": "Um projeto full-stack, feito com Next.js 13 e Tailwind. Focado no anúncio de propriedades para aluguel assim como o airbnb. Possibilita o login com contas do Google e do Github por meio do NextAuth, além de várias funcionalidades do front-end para uma melhor experiência do usuário"
       }
     },
     "contact": {

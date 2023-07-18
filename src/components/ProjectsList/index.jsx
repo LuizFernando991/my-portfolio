@@ -8,14 +8,18 @@ import {
   SiReact,
   SiExpress,
   SiYoutube,
-  SiGithub
+  SiGithub,
+  SiPrisma,
+  SiTailwindcss
 } from 'react-icons/si'
+import { BiLink } from 'react-icons/bi'
 import ModalVideo from '../ModalVideo'
 
 import i18next from 'i18next'
 
 import instagramPNG from '../../assets/Instagrammacbook.png'
 import netflixPNG from '../../assets/netflixmacbookiphone.png'
+import airbnbPNG from '../../assets/airbnbmackbookiphone.png'
 import chatPNG from '../../assets/chatmacbook.png'
 import quizPNG from '../../assets/quizmacbook.png'
 
@@ -58,6 +62,45 @@ export default function ProjectsList() {
                 <Styled.Link
                   target="_blank"
                   href="https://github.com/LuizFernando991/Projeto_Instagram"
+                >
+                  <SiGithub color="#333" />
+                </Styled.Link>
+              </Styled.CodeAndDemoLinks>
+            </Styled.Icons>
+          </Styled.ProejctItemDescriptionContainer>
+        </Styled.ProjectItem>
+        <Styled.ProjectItem>
+          <Styled.PreviewImage src={airbnbPNG} />
+          <Styled.ProejctItemDescriptionContainer>
+            <Styled.Title>Airbnb Clone</Styled.Title>
+            <Styled.ProjectDescription>
+              {i18next.t('projects.airbnb.description')}
+            </Styled.ProjectDescription>
+            <Styled.Icons>
+              <Styled.TecIconsContainer>
+                <SiTypescript />
+                <SiNextdotjs />
+                <SiMongodb />
+                <SiPrisma />
+                <SiTailwindcss />
+              </Styled.TecIconsContainer>
+              <Styled.CodeAndDemoLinks>
+                <Styled.Link
+                  target="_blank"
+                  href="https://project-rent-property.vercel.app/"
+                >
+                  <BiLink color="#333" />
+                </Styled.Link>
+                <Styled.Link
+                  onClick={() =>
+                    setSelectedLink('https://www.youtube.com/embed/PBqff_U9kr0')
+                  }
+                >
+                  <SiYoutube color="#333" />
+                </Styled.Link>
+                <Styled.Link
+                  target="_blank"
+                  href="https://github.com/LuizFernando991/Project_Airbnb"
                 >
                   <SiGithub color="#333" />
                 </Styled.Link>

@@ -37,6 +37,9 @@
       },
       "quiz": {
         "description": "A full-stack project where I consume an API on the back-end to generate questions, as well as store player data, making it possible to obtain the player's percentage of correct answers."
+      },
+      "airbnb": {
+        "description": "A full-stack project, built with Next.js 13 and Tailwind. It focuses on property rentals similar to Airbnb. It allows login with Google and GitHub accounts through NextAuth, along with various front-end features for an enhanced user experience"
       }
     },
     "contact": {

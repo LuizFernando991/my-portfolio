@@ -4,7 +4,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiSocketdotio,
-  SiJest,
+  SiTailwindcss,
   SiPython,
   SiMongodb,
   SiMysql,
@@ -61,8 +61,8 @@ export default function Skills() {
         <Styled.Label>Socket.io</Styled.Label>
       </Styled.Li>
       <Styled.Li>
-        <SiJest />
-        <Styled.Label>JEST</Styled.Label>
+        <SiTailwindcss />
+        <Styled.Label>Tailwind</Styled.Label>
       </Styled.Li>
       <Styled.Li>
         <SiPython />
