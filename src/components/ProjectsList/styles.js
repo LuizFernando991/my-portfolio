@@ -14,9 +14,8 @@ export const Container = styled.ul`
 export const ProjectItem = styled.li`
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 6rem;
   justify-items: center;
+  gap: 6rem;
   margin-top: 10rem;
 `
 
@@ -28,7 +27,7 @@ export const PreviewImageContainer = styled.div`
 `
 
 export const PreviewImage = styled.img`
-  width: 95%;
+  width: 100%;
   max-width: max-content;
 `
 
