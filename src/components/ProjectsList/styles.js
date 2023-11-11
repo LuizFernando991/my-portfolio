@@ -22,10 +22,13 @@ export const ProjectItem = styled.li`
 
 export const PreviewImageContainer = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 export const PreviewImage = styled.img`
-  width: 100%;
+  width: 95%;
   max-width: max-content;
 `
 
