@@ -30,12 +30,21 @@ export default function AboutSection() {
               <Styled.P>{i18next.t('about.AboutMeDescription3')}</Styled.P>
             </Styled.About>
           </Slide>
-          <Styled.Skills>
-            <Slide direction="right" style={{ width: '100%' }} triggerOnce>
+          <Slide
+            direction="right"
+            style={{
+              width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+            triggerOnce
+          >
+            <Styled.Skills>
               <Styled.H2>{i18next.t('about.SkillsTitle')}</Styled.H2>
               <Skills />
-            </Slide>
-          </Styled.Skills>
+            </Styled.Skills>
+          </Slide>
         </Styled.AboutAndSkillsContainer>
       </Styled.MainContainer>
     </Styled.Container>
