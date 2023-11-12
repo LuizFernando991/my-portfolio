@@ -35,7 +35,7 @@ export default function ProjectsList() {
         <ModalVideo setLink={setSelectedLink} link={selectedLink} />
       )}
       <Styled.Container>
-        <Slide direction="left">
+        <Slide direction="left" triggerOnce>
           <Styled.ProjectItem>
             <Styled.PreviewImageContainer>
               <Styled.PreviewImage src={instagramPNG} />
