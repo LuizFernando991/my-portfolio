@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link, animateScroll } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -9,9 +9,18 @@ import profileImage from '../../assets/NoBgProfile.png'
 
 import i18next from 'i18next'
 import * as Styled from './styles'
+import { Fade } from 'react-awesome-reveal'
 
 function Header({ darkmode, setDarkMode }) {
   const [openMenu, setOpenMenu] = useState(false)
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [openMenu])
 
   const transition = useTransition(openMenu, {
     from: { transform: 'translate3d(-100%, 0%, 0)' },
@@ -26,7 +35,7 @@ function Header({ darkmode, setDarkMode }) {
           item && (
             <Styled.DropDownMenu style={style}>
               {openMenu && (
-                <>
+                <Fade>
                   <Styled.Li>
                     <Link
                       onClick={() => {
@@ -45,8 +54,6 @@ function Header({ darkmode, setDarkMode }) {
                     <Link
                       onClick={() => setOpenMenu(false)}
                       to={'about'}
-                      smooth
-                      duration={200}
                       offset={-40}
                       style={{ cursor: 'pointer' }}
                     >
@@ -57,9 +64,7 @@ function Header({ darkmode, setDarkMode }) {
                     <Link
                       onClick={() => setOpenMenu(false)}
                       to={'projects'}
-                      smooth
-                      duration={200}
-                      offset={-140}
+                      offset={-40}
                       style={{ cursor: 'pointer' }}
                     >
                       {i18next.t('navbar.projects')}
@@ -69,15 +74,13 @@ function Header({ darkmode, setDarkMode }) {
                     <Link
                       onClick={() => setOpenMenu(false)}
                       to={'contact'}
-                      smooth
-                      duration={200}
-                      offset={-60}
+                      offset={-40}
                       style={{ cursor: 'pointer' }}
                     >
                       {i18next.t('navbar.contact')}
                     </Link>
                   </Styled.Li>
-                </>
+                </Fade>
               )}
             </Styled.DropDownMenu>
           )
@@ -107,27 +110,17 @@ function Header({ darkmode, setDarkMode }) {
                 </Styled.ALink>
               </Styled.Li>
               <Styled.Li>
-                <Styled.ALink to={'about'} smooth duration={200} offset={-40}>
+                <Styled.ALink to={'about'} offset={-100}>
                   {i18next.t('navbar.about')}
                 </Styled.ALink>
               </Styled.Li>
               <Styled.Li>
-                <Styled.ALink
-                  to={'projects'}
-                  smooth
-                  duration={200}
-                  offset={-140}
-                >
+                <Styled.ALink to={'projects'} offset={-100}>
                   {i18next.t('navbar.projects')}
                 </Styled.ALink>
               </Styled.Li>
               <Styled.Li>
-                <Styled.ALink
-                  to={'contact'}
-                  smooth
-                  duration={200}
-                  offset={-100}
-                >
+                <Styled.ALink to={'contact'} offset={-80}>
                   {i18next.t('navbar.contact')}
                 </Styled.ALink>
               </Styled.Li>

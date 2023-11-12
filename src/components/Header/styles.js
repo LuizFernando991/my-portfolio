@@ -118,7 +118,7 @@ export const DropDownMenu = styled(animated.ul)`
   height: 100vh;
   transform-origin: top left;
   z-index: 2;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(200px);
 
   li {
     font-size: 2rem;
