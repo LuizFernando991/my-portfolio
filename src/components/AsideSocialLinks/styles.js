@@ -59,5 +59,6 @@ export const Li = styled.li`
   &:hover {
     transform: translate3d(0px, 0px, 0px);
     border-radius: 0px 3px 3px 0px;
+    filter: brightness(1.1);
   }
 `

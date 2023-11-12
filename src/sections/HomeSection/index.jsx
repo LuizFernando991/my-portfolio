@@ -1,3 +1,4 @@
+import { Typewriter } from 'react-simple-typewriter'
 import ScrollButton from '../../components/ScrollButton'
 import AsideSocialLinks from '../../components/AsideSocialLinks'
 
@@ -10,7 +11,9 @@ export default function HomeSection() {
     <Styled.Container name="home">
       <Styled.ContentContainer>
         <Styled.HiContainer>
-          <Styled.H1>{i18next.t('hisection.title')}</Styled.H1>
+          <Styled.H1>
+            <Typewriter cursor words={[`${i18next.t('hisection.title')}`]} />
+          </Styled.H1>
           <Styled.DescriptionContainer>
             <Styled.Description>
               {i18next.t('hisection.description')}

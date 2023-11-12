@@ -13,5 +13,10 @@ export const Button = styled(Link)`
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
+  &:hover {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+  }
   cursor: pointer;
 `
