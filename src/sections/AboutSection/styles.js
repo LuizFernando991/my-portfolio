@@ -5,6 +5,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   background-color: var(--bg-secondary-color);
+  overflow-x: hidden;
 `
 
 export const MainContainer = styled.div`

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 import { Link, animateScroll } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useTransition } from 'react-spring'
@@ -86,7 +87,11 @@ function Header({ darkmode, setDarkMode }) {
           <Styled.LogoImageContainer>
             <Styled.LogoImage src={profileImage} />
           </Styled.LogoImageContainer>
-          <Styled.Logo>{'<Luiz Fernando/>'}</Styled.Logo>
+          <Styled.Logo>
+            {'<'}
+            <Typewriter cursor words={['Luiz Fernando']} loop />
+            {'/>'}
+          </Styled.Logo>
         </Styled.LogoContainer>
         <Styled.NavBarContainer>
           <Styled.NavBar>
