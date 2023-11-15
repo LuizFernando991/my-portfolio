@@ -20,7 +20,7 @@ export default function HomeSection() {
             </Styled.Description>
           </Styled.DescriptionContainer>
           <Styled.ButtonContaier>
-            <ScrollButton toLink="projects">
+            <ScrollButton toLink="projects" offSet={-100}>
               {i18next.t('hisection.button')}
             </ScrollButton>
           </Styled.ButtonContaier>
