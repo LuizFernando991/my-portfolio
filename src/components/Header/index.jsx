@@ -22,9 +22,9 @@ function Header({ darkmode, setDarkMode }) {
   }, [openMenu])
 
   const transition = useTransition(openMenu, {
-    from: { transform: 'translate3d(-100%, 0%, 0)' },
-    enter: { transform: 'translate3d(0%, 0%, 0)' },
-    leave: { transform: 'translate3d(-100%, 0%, 0)' }
+    from: { transform: 'translate3d(-100%, 0%, 0)', opacity: 0.5 },
+    enter: { transform: 'translate3d(0%, 0%, 0)', opacity: 1 },
+    leave: { transform: 'translate3d(-100%, 0%, 0)', opacity: 0.5 }
   })
 
   return (
