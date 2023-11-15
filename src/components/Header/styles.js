@@ -117,8 +117,8 @@ export const DropDownMenu = styled(animated.ul)`
   width: 100%;
   height: 100vh;
   transform-origin: top left;
+  background-color: var(--bg-grey-color);
   z-index: 2;
-  backdrop-filter: blur(200px);
 
   li {
     font-size: 2rem;

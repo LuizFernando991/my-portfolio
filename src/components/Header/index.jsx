@@ -9,7 +9,6 @@ import profileImage from '../../assets/NoBgProfile.png'
 
 import i18next from 'i18next'
 import * as Styled from './styles'
-import { Fade } from 'react-awesome-reveal'
 
 function Header({ darkmode, setDarkMode }) {
   const [openMenu, setOpenMenu] = useState(false)
@@ -35,7 +34,7 @@ function Header({ darkmode, setDarkMode }) {
           item && (
             <Styled.DropDownMenu style={style}>
               {openMenu && (
-                <Fade>
+                <>
                   <Styled.Li>
                     <Link
                       onClick={() => {
@@ -80,7 +79,7 @@ function Header({ darkmode, setDarkMode }) {
                       {i18next.t('navbar.contact')}
                     </Link>
                   </Styled.Li>
-                </Fade>
+                </>
               )}
             </Styled.DropDownMenu>
           )
