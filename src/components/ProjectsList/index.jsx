@@ -61,13 +61,13 @@ export default function ProjectsList() {
                       )
                     }
                   >
-                    <SiYoutube color="#333" />
+                    <SiYoutube color="#ff0000" />
                   </Styled.Link>
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Projeto_Instagram"
                   >
-                    <SiGithub color="#333" />
+                    <SiGithub color="#000" />
                   </Styled.Link>
                 </Styled.CodeAndDemoLinks>
               </Styled.Icons>
@@ -95,7 +95,7 @@ export default function ProjectsList() {
                     target="_blank"
                     href="https://project-rent-property.vercel.app/"
                   >
-                    <BiLink color="#333" />
+                    <BiLink color="#07c7e0" />
                   </Styled.Link>
                   <Styled.Link
                     onClick={() =>
@@ -104,13 +104,13 @@ export default function ProjectsList() {
                       )
                     }
                   >
-                    <SiYoutube color="#333" />
+                    <SiYoutube color="#ff0000" />
                   </Styled.Link>
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Project_Airbnb"
                   >
-                    <SiGithub color="#333" />
+                    <SiGithub color="#000" />
                   </Styled.Link>
                 </Styled.CodeAndDemoLinks>
               </Styled.Icons>
@@ -131,19 +131,25 @@ export default function ProjectsList() {
                 </Styled.TecIconsContainer>
                 <Styled.CodeAndDemoLinks>
                   <Styled.Link
+                    target="_blank"
+                    href="https://musing-villani-8634c6.netlify.app/"
+                  >
+                    <BiLink color="#07c7e0" />
+                  </Styled.Link>
+                  <Styled.Link
                     onClick={() =>
                       setSelectedLink(
                         'https://www.youtube.com/embed/pJkql6tAQug'
                       )
                     }
                   >
-                    <SiYoutube color="#333" />
+                    <SiYoutube color="#ff0000" />
                   </Styled.Link>
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Project-React-Netflix"
                   >
-                    <SiGithub color="#333" />
+                    <SiGithub color="#000" />
                   </Styled.Link>
                 </Styled.CodeAndDemoLinks>
               </Styled.Icons>
@@ -175,13 +181,13 @@ export default function ProjectsList() {
                       )
                     }
                   >
-                    <SiYoutube color="#333" />
+                    <SiYoutube color="#ff0000" />
                   </Styled.Link>
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Project_Chat"
                   >
-                    <SiGithub color="#333" />
+                    <SiGithub color="#000" />
                   </Styled.Link>
                 </Styled.CodeAndDemoLinks>
               </Styled.Icons>
@@ -211,13 +217,13 @@ export default function ProjectsList() {
                       )
                     }
                   >
-                    <SiYoutube color="#333" />
+                    <SiYoutube color="#ff0000" />
                   </Styled.Link>
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Projeto_QuizMe"
                   >
-                    <SiGithub color="#333" />
+                    <SiGithub color="#000" />
                   </Styled.Link>
                 </Styled.CodeAndDemoLinks>
               </Styled.Icons>
