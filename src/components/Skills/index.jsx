@@ -12,7 +12,11 @@ import {
   SiExpress,
   SiPrisma,
   SiNestjs,
-  SiStyledcomponents
+  SiStyledcomponents,
+  SiPostgresql,
+  SiGraphql,
+  SiApollographql,
+  SiAxios
 } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import * as Styled from './styles'
@@ -57,6 +61,18 @@ export default function Skills() {
         <Styled.Label>Express</Styled.Label>
       </Styled.Li>
       <Styled.Li>
+        <SiAxios />
+        <Styled.Label>Axios</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiGraphql />
+        <Styled.Label>GraphQL</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiApollographql />
+        <Styled.Label>Apollo Client</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
         <SiSocketdotio />
         <Styled.Label>Socket.io</Styled.Label>
       </Styled.Li>
@@ -75,6 +91,10 @@ export default function Skills() {
       <Styled.Li>
         <SiMysql />
         <Styled.Label>MySQL</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiPostgresql />
+        <Styled.Label>PostgresSQL</Styled.Label>
       </Styled.Li>
       <Styled.Li>
         <SiPrisma />

@@ -32,8 +32,8 @@
       "netflix": {
         "description": "Um projeto front-end feito a partir de uma API pública. Feito principalmente com os princípios do React.js e Styled-Components focando nas funções que permitem maior interatividade com o usuário."
       },
-      "chat": {
-        "description": "Um projeto full-stack onde utilizo o socket.io para proporcionar uma conexão em tempo real com o servidor, assim possibilitando a funcionalidade de mensagens instantâneas."
+      "tiktok": {
+        "description": "Um projeto full-stack, onde utilizo o GraphQL para construir a API em Nest.js, contendo autenticação de usuários, e todas as funcionalidades de criar posts, upload de vídeos e imagens, além da possibilidade de comentários e likes."
       },
       "quiz": {
         "description": "Um projeto full-stack, onde consumo uma API no back-end para gerar as perguntas, além de armazenar os dados do jogador, dessa maneira sendo possível obter a porcentagem de acerto do player."

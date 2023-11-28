@@ -4,14 +4,16 @@ import { FaNode } from 'react-icons/fa'
 import {
   SiNextdotjs,
   SiTypescript,
-  SiSocketdotio,
   SiMongodb,
   SiReact,
   SiExpress,
   SiYoutube,
   SiGithub,
   SiPrisma,
-  SiTailwindcss
+  SiTailwindcss,
+  SiNestjs,
+  SiPostgresql,
+  SiGraphql
 } from 'react-icons/si'
 import { BiLink } from 'react-icons/bi'
 import ModalVideo from '../ModalVideo'
@@ -21,7 +23,7 @@ import i18next from 'i18next'
 import instagramPNG from '../../assets/Instagrammacbook.png'
 import netflixPNG from '../../assets/netflixmacbookiphone.png'
 import airbnbPNG from '../../assets/airbnbmackbookiphone.png'
-import chatPNG from '../../assets/chatmacbook.png'
+import tiktokPNG from '../../assets/tiktokmackbookiphone.png'
 import quizPNG from '../../assets/quizmacbook.png'
 
 import * as Styled from './styles'
@@ -35,45 +37,6 @@ export default function ProjectsList() {
         <ModalVideo setLink={setSelectedLink} link={selectedLink} />
       )}
       <Styled.Container>
-        <Slide direction="left" triggerOnce>
-          <Styled.ProjectItem>
-            <Styled.PreviewImageContainer>
-              <Styled.PreviewImage src={instagramPNG} />
-            </Styled.PreviewImageContainer>
-            <Styled.ProejctItemDescriptionContainer>
-              <Styled.Title>Instagram Clone</Styled.Title>
-              <Styled.ProjectDescription>
-                {i18next.t('projects.instagram.description')}
-              </Styled.ProjectDescription>
-              <Styled.Icons>
-                <Styled.TecIconsContainer>
-                  <FaNode />
-                  <SiExpress />
-                  <SiTypescript />
-                  <SiNextdotjs />
-                  <SiMongodb />
-                </Styled.TecIconsContainer>
-                <Styled.CodeAndDemoLinks>
-                  <Styled.Link
-                    onClick={() =>
-                      setSelectedLink(
-                        'https://www.youtube.com/embed/VPiDCr06BZQ'
-                      )
-                    }
-                  >
-                    <SiYoutube color="#ff0000" />
-                  </Styled.Link>
-                  <Styled.Link
-                    target="_blank"
-                    href="https://github.com/LuizFernando991/Projeto_Instagram"
-                  >
-                    <SiGithub color="#000" />
-                  </Styled.Link>
-                </Styled.CodeAndDemoLinks>
-              </Styled.Icons>
-            </Styled.ProejctItemDescriptionContainer>
-          </Styled.ProjectItem>
-        </Slide>
         <Slide direction="right" triggerOnce>
           <Styled.ProjectItem>
             <Styled.PreviewImage src={airbnbPNG} />
@@ -117,6 +80,85 @@ export default function ProjectsList() {
             </Styled.ProejctItemDescriptionContainer>
           </Styled.ProjectItem>
         </Slide>
+        <Slide direction="right" triggerOnce>
+          <Styled.ProjectItem>
+            <Styled.PreviewImage src={tiktokPNG} />
+            <Styled.ProejctItemDescriptionContainer>
+              <Styled.Title>TikTok Clone</Styled.Title>
+              <Styled.ProjectDescription>
+                {i18next.t('projects.tiktok.description')}
+              </Styled.ProjectDescription>
+              <Styled.Icons>
+                <Styled.TecIconsContainer>
+                  <FaNode />
+                  <SiNestjs />
+                  <SiGraphql />
+                  <SiTypescript />
+                  <SiReact />
+                  <SiTailwindcss />
+                  <SiPrisma />
+                  <SiPostgresql />
+                </Styled.TecIconsContainer>
+                <Styled.CodeAndDemoLinks>
+                  <Styled.Link
+                    onClick={() =>
+                      setSelectedLink(
+                        'https://www.youtube.com/embed/4F-WcwPu9sw'
+                      )
+                    }
+                  >
+                    <SiYoutube color="#ff0000" />
+                  </Styled.Link>
+                  <Styled.Link
+                    target="_blank"
+                    href="https://github.com/LuizFernando991/Project-Tiktok"
+                  >
+                    <SiGithub color="#000" />
+                  </Styled.Link>
+                </Styled.CodeAndDemoLinks>
+              </Styled.Icons>
+            </Styled.ProejctItemDescriptionContainer>
+          </Styled.ProjectItem>
+        </Slide>
+        <Slide direction="left" triggerOnce>
+          <Styled.ProjectItem>
+            <Styled.PreviewImageContainer>
+              <Styled.PreviewImage src={instagramPNG} />
+            </Styled.PreviewImageContainer>
+            <Styled.ProejctItemDescriptionContainer>
+              <Styled.Title>Instagram Clone</Styled.Title>
+              <Styled.ProjectDescription>
+                {i18next.t('projects.instagram.description')}
+              </Styled.ProjectDescription>
+              <Styled.Icons>
+                <Styled.TecIconsContainer>
+                  <FaNode />
+                  <SiExpress />
+                  <SiTypescript />
+                  <SiNextdotjs />
+                  <SiMongodb />
+                </Styled.TecIconsContainer>
+                <Styled.CodeAndDemoLinks>
+                  <Styled.Link
+                    onClick={() =>
+                      setSelectedLink(
+                        'https://www.youtube.com/embed/VPiDCr06BZQ'
+                      )
+                    }
+                  >
+                    <SiYoutube color="#ff0000" />
+                  </Styled.Link>
+                  <Styled.Link
+                    target="_blank"
+                    href="https://github.com/LuizFernando991/Projeto_Instagram"
+                  >
+                    <SiGithub color="#000" />
+                  </Styled.Link>
+                </Styled.CodeAndDemoLinks>
+              </Styled.Icons>
+            </Styled.ProejctItemDescriptionContainer>
+          </Styled.ProjectItem>
+        </Slide>
         <Slide direction="left" triggerOnce>
           <Styled.ProjectItem>
             <Styled.PreviewImage src={netflixPNG} />
@@ -148,44 +190,6 @@ export default function ProjectsList() {
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Project-React-Netflix"
-                  >
-                    <SiGithub color="#000" />
-                  </Styled.Link>
-                </Styled.CodeAndDemoLinks>
-              </Styled.Icons>
-            </Styled.ProejctItemDescriptionContainer>
-          </Styled.ProjectItem>
-        </Slide>
-        <Slide direction="right" triggerOnce>
-          <Styled.ProjectItem>
-            <Styled.PreviewImage src={chatPNG} />
-            <Styled.ProejctItemDescriptionContainer>
-              <Styled.Title>Realtime chat</Styled.Title>
-              <Styled.ProjectDescription>
-                {i18next.t('projects.chat.description')}
-              </Styled.ProjectDescription>
-              <Styled.Icons>
-                <Styled.TecIconsContainer>
-                  <FaNode />
-                  <SiExpress />
-                  <SiTypescript />
-                  <SiReact />
-                  <SiMongodb />
-                  <SiSocketdotio />
-                </Styled.TecIconsContainer>
-                <Styled.CodeAndDemoLinks>
-                  <Styled.Link
-                    onClick={() =>
-                      setSelectedLink(
-                        'https://www.youtube.com/embed/k0k2cgNIhDo'
-                      )
-                    }
-                  >
-                    <SiYoutube color="#ff0000" />
-                  </Styled.Link>
-                  <Styled.Link
-                    target="_blank"
-                    href="https://github.com/LuizFernando991/Project_Chat"
                   >
                     <SiGithub color="#000" />
                   </Styled.Link>
