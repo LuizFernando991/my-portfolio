@@ -39,7 +39,7 @@
         "description": "Um projeto full-stack, feito com Next.js 13 e Tailwind. Focado no anúncio de propriedades para aluguel assim como o airbnb. Possibilita o login com contas do Google e do Github por meio do NextAuth, além de várias funcionalidades do front-end para uma melhor experiência do usuário"
       },
       "pdfhelper": {
-        "description" : "Um projeto onde o usuário pode fazer upload de arquivos pdf e analisá-los com a ajuda de inteligência artificial, por meio da integração com o GPT-chat da OpenAI. Além de possuir integração de pagamento com a plataforma STRIPE, proporcionando a possibilidade de fazer melhorias no plano atual do usuário. Você pode conferir a demo clicando no link abaixo:"
+        "description" : "Um projeto em que o usuário pode fazer upload de arquivos pdf e analisá-los com a ajuda de inteligência artificial, por meio da integração com o GPT-chat da OpenAI. Além de possuir integração de pagamento com a plataforma STRIPE, proporcionando a possibilidade de fazer melhorias no plano atual do usuário. Você pode conferir a demo clicando no link abaixo:"
       }
     },
     "contact": {
