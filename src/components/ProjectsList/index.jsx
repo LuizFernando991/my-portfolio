@@ -13,7 +13,9 @@ import {
   SiTailwindcss,
   SiNestjs,
   SiPostgresql,
-  SiGraphql
+  SiGraphql,
+  SiMysql,
+  SiOpenai
 } from 'react-icons/si'
 import { BiLink } from 'react-icons/bi'
 import ModalVideo from '../ModalVideo'
@@ -24,7 +26,7 @@ import instagramPNG from '../../assets/Instagrammacbook.png'
 import netflixPNG from '../../assets/netflixmacbookiphone.png'
 import airbnbPNG from '../../assets/airbnbmackbookiphone.png'
 import tiktokPNG from '../../assets/tiktokmackbookiphone.png'
-import quizPNG from '../../assets/quizmacbook.png'
+import pdfPNG from '../../assets/mackbookiphonepdf.png'
 
 import * as Styled from './styles'
 
@@ -37,6 +39,83 @@ export default function ProjectsList() {
         <ModalVideo setLink={setSelectedLink} link={selectedLink} />
       )}
       <Styled.Container>
+        <Slide direction="right" triggerOnce>
+          <Styled.ProjectItem>
+            <Styled.PreviewImage src={pdfPNG} />
+            <Styled.ProejctItemDescriptionContainer>
+              <Styled.Title>IA PDFhelper</Styled.Title>
+              <Styled.ProjectDescription>
+                {i18next.t('projects.pdfhelper.description')}
+              </Styled.ProjectDescription>
+              <Styled.Icons>
+                <Styled.TecIconsContainer>
+                  <SiTypescript />
+                  <SiNextdotjs />
+                  <SiTailwindcss />
+                  <SiPrisma />
+                  <SiMysql />
+                  <SiOpenai />
+                </Styled.TecIconsContainer>
+                <Styled.CodeAndDemoLinks>
+                  <Styled.Link
+                    target="_blank"
+                    href="https://pdfhelper-alpha.vercel.app/"
+                  >
+                    <BiLink color="#07c7e0" />
+                  </Styled.Link>
+                  <Styled.Link
+                    onClick={() =>
+                      setSelectedLink(
+                        'https://www.youtube.com/embed/c52dNCwC7YQ'
+                      )
+                    }
+                  >
+                    <SiYoutube color="#ff0000" />
+                  </Styled.Link>
+                </Styled.CodeAndDemoLinks>
+              </Styled.Icons>
+            </Styled.ProejctItemDescriptionContainer>
+          </Styled.ProjectItem>
+        </Slide>
+        <Slide direction="left" triggerOnce>
+          <Styled.ProjectItem>
+            <Styled.PreviewImageContainer>
+              <Styled.PreviewImage src={instagramPNG} />
+            </Styled.PreviewImageContainer>
+            <Styled.ProejctItemDescriptionContainer>
+              <Styled.Title>Instagram Clone</Styled.Title>
+              <Styled.ProjectDescription>
+                {i18next.t('projects.instagram.description')}
+              </Styled.ProjectDescription>
+              <Styled.Icons>
+                <Styled.TecIconsContainer>
+                  <FaNode />
+                  <SiExpress />
+                  <SiTypescript />
+                  <SiNextdotjs />
+                  <SiMongodb />
+                </Styled.TecIconsContainer>
+                <Styled.CodeAndDemoLinks>
+                  <Styled.Link
+                    onClick={() =>
+                      setSelectedLink(
+                        'https://www.youtube.com/embed/VPiDCr06BZQ'
+                      )
+                    }
+                  >
+                    <SiYoutube color="#ff0000" />
+                  </Styled.Link>
+                  <Styled.Link
+                    target="_blank"
+                    href="https://github.com/LuizFernando991/Projeto_Instagram"
+                  >
+                    <SiGithub color="#000" />
+                  </Styled.Link>
+                </Styled.CodeAndDemoLinks>
+              </Styled.Icons>
+            </Styled.ProejctItemDescriptionContainer>
+          </Styled.ProjectItem>
+        </Slide>
         <Slide direction="right" triggerOnce>
           <Styled.ProjectItem>
             <Styled.PreviewImage src={airbnbPNG} />
@@ -190,42 +269,6 @@ export default function ProjectsList() {
                   <Styled.Link
                     target="_blank"
                     href="https://github.com/LuizFernando991/Project-React-Netflix"
-                  >
-                    <SiGithub color="#000" />
-                  </Styled.Link>
-                </Styled.CodeAndDemoLinks>
-              </Styled.Icons>
-            </Styled.ProejctItemDescriptionContainer>
-          </Styled.ProjectItem>
-        </Slide>
-        <Slide direction="left" triggerOnce>
-          <Styled.ProjectItem>
-            <Styled.PreviewImage src={quizPNG} />
-            <Styled.ProejctItemDescriptionContainer>
-              <Styled.Title>QuizMe</Styled.Title>
-              <Styled.ProjectDescription>
-                {i18next.t('projects.quiz.description')}
-              </Styled.ProjectDescription>
-              <Styled.Icons>
-                <Styled.TecIconsContainer>
-                  <FaNode />
-                  <SiExpress />
-                  <SiReact />
-                  <SiMongodb />
-                </Styled.TecIconsContainer>
-                <Styled.CodeAndDemoLinks>
-                  <Styled.Link
-                    onClick={() =>
-                      setSelectedLink(
-                        'https://www.youtube.com/embed/WI9Q1DUZudM'
-                      )
-                    }
-                  >
-                    <SiYoutube color="#ff0000" />
-                  </Styled.Link>
-                  <Styled.Link
-                    target="_blank"
-                    href="https://github.com/LuizFernando991/Projeto_QuizMe"
                   >
                     <SiGithub color="#000" />
                   </Styled.Link>

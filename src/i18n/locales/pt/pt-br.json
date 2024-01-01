@@ -35,11 +35,11 @@
       "tiktok": {
         "description": "Um projeto full-stack, onde utilizo o GraphQL para construir a API em Nest.js, contendo autenticação de usuários, e todas as funcionalidades de criar posts, upload de vídeos e imagens, além da possibilidade de comentários e likes."
       },
-      "quiz": {
-        "description": "Um projeto full-stack, onde consumo uma API no back-end para gerar as perguntas, além de armazenar os dados do jogador, dessa maneira sendo possível obter a porcentagem de acerto do player."
-      },
       "airbnb": {
         "description": "Um projeto full-stack, feito com Next.js 13 e Tailwind. Focado no anúncio de propriedades para aluguel assim como o airbnb. Possibilita o login com contas do Google e do Github por meio do NextAuth, além de várias funcionalidades do front-end para uma melhor experiência do usuário"
+      },
+      "pdfhelper": {
+        "description" : "Um projeto onde o usuário pode fazer upload de arquivos pdf e analisá-los com a ajuda de inteligência artificial, por meio da integração com o GPT-chat da OpenAI. Além de possui integração de pagamento com a plataforma STRIPE, proporcionando a possibilidade de fazer melhorias no plano atual do usuário. Você pode conferir a demo clicando no link abaixo:"
       }
     },
     "contact": {
