@@ -77,45 +77,6 @@ export default function ProjectsList() {
             </Styled.ProejctItemDescriptionContainer>
           </Styled.ProjectItem>
         </Slide>
-        <Slide direction="left" triggerOnce>
-          <Styled.ProjectItem>
-            <Styled.PreviewImageContainer>
-              <Styled.PreviewImage src={instagramPNG} />
-            </Styled.PreviewImageContainer>
-            <Styled.ProejctItemDescriptionContainer>
-              <Styled.Title>Instagram Clone</Styled.Title>
-              <Styled.ProjectDescription>
-                {i18next.t('projects.instagram.description')}
-              </Styled.ProjectDescription>
-              <Styled.Icons>
-                <Styled.TecIconsContainer>
-                  <FaNode />
-                  <SiExpress />
-                  <SiTypescript />
-                  <SiNextdotjs />
-                  <SiMongodb />
-                </Styled.TecIconsContainer>
-                <Styled.CodeAndDemoLinks>
-                  <Styled.Link
-                    onClick={() =>
-                      setSelectedLink(
-                        'https://www.youtube.com/embed/VPiDCr06BZQ'
-                      )
-                    }
-                  >
-                    <SiYoutube color="#ff0000" />
-                  </Styled.Link>
-                  <Styled.Link
-                    target="_blank"
-                    href="https://github.com/LuizFernando991/Projeto_Instagram"
-                  >
-                    <SiGithub color="#000" />
-                  </Styled.Link>
-                </Styled.CodeAndDemoLinks>
-              </Styled.Icons>
-            </Styled.ProejctItemDescriptionContainer>
-          </Styled.ProjectItem>
-        </Slide>
         <Slide direction="right" triggerOnce>
           <Styled.ProjectItem>
             <Styled.PreviewImage src={airbnbPNG} />
