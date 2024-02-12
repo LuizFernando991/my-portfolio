@@ -76,4 +76,5 @@ export const P = styled.p`
   line-height: 1.7;
   margin-bottom: 1rem;
   text-align: justify;
+  margin-top: 5rem;
 `
