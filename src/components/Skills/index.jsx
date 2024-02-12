@@ -16,7 +16,11 @@ import {
   SiPostgresql,
   SiGraphql,
   SiApollographql,
-  SiAxios
+  SiAxios,
+  SiAmazonaws,
+  SiDocker,
+  SiGit,
+  SiMongoose
 } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import * as Styled from './styles'
@@ -77,10 +81,6 @@ export default function Skills() {
         <Styled.Label>Socket.io</Styled.Label>
       </Styled.Li>
       <Styled.Li>
-        <SiTailwindcss />
-        <Styled.Label>Tailwind</Styled.Label>
-      </Styled.Li>
-      <Styled.Li>
         <SiPython />
         <Styled.Label>Python</Styled.Label>
       </Styled.Li>
@@ -101,8 +101,28 @@ export default function Skills() {
         <Styled.Label>Prisma</Styled.Label>
       </Styled.Li>
       <Styled.Li>
+        <SiMongoose />
+        <Styled.Label>Mongoose</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
         <SiStyledcomponents />
         <Styled.Label>Styled Components</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiTailwindcss />
+        <Styled.Label>Tailwind</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiAmazonaws />
+        <Styled.Label>AWS</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiDocker />
+        <Styled.Label>Docker</Styled.Label>
+      </Styled.Li>
+      <Styled.Li>
+        <SiGit />
+        <Styled.Label>Git</Styled.Label>
       </Styled.Li>
     </Styled.Container>
   )
